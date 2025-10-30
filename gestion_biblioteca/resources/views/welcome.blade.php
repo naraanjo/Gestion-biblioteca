@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-  <title>{{ config('app.name', 'Laravel') }}</title>
-
-
-
-  @vite('resources/css/app.css')
+    <!-- Incluye CSS y JS de Vite -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-
-
-<body class="">
-  <div id="app"></div>
-
-
-  @vite('resources/css/app.css')
-
+<body>
+    <!-- Vue montará la app aquí -->
+    <div id="app"></div>
 </body>
-
 </html>

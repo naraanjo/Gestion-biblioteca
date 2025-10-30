@@ -1,5 +1,6 @@
 import './bootstrap';
-import {createaApp} from 'vue';
+import { createApp } from 'vue';
+import BookList from './components/BookList.vue';
 
-// Crear app
-createaApp(HelloWorld).mount("#app");
+// Crear y montar la app Vue
+createApp(BookList).mount('#app');
